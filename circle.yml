@@ -1,0 +1,9 @@
+machine:
+    node:
+        version: 6.7.0
+    post:
+        - npm install -g npm@3.x.x
+dependencies:
+    pre:
+        - npm install -g eslint
+        - npm install -g mocha

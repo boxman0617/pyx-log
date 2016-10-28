@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PyxLog Open Source API Docs</title>
+    
+    <meta name="description" content="Open Source API docs for PyxLog logger" />
+    
+        <meta name="keywords" content="logging,npm,node,log" />
+        <meta name="keyword" content="logging,npm,node,log" />
+    
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"applicationName":"PyxLog","meta":{"title":"PyxLog Open Source API Docs","description":"Open Source API docs for PyxLog logger","keyword":"logging,npm,node,log"},"linenums":true,"default":{}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">PyxLog</a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+    
+        <li class="item" data-name="PyxLog">
+            <span class="title">
+                <a href="PyxLog.html">PyxLog</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="PyxLog#_mode"><a href="PyxLog.html#_mode">_mode</a></li>
+            
+                <li data-name="PyxLog#_name"><a href="PyxLog.html#_name">_name</a></li>
+            
+                <li data-name="PyxLog#_prettyName"><a href="PyxLog.html#_prettyName">_prettyName</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="PyxLog.create"><a href="PyxLog.html#.create">create</a></li>
+            
+                <li data-name="PyxLog#_runThisInMode"><a href="PyxLog.html#_runThisInMode">_runThisInMode</a></li>
+            
+                <li data-name="PyxLog#alert"><a href="PyxLog.html#alert">alert</a></li>
+            
+                <li data-name="PyxLog#beNormal"><a href="PyxLog.html#beNormal">beNormal</a></li>
+            
+                <li data-name="PyxLog#beSilent"><a href="PyxLog.html#beSilent">beSilent</a></li>
+            
+                <li data-name="PyxLog#debug"><a href="PyxLog.html#debug">debug</a></li>
+            
+                <li data-name="PyxLog#header"><a href="PyxLog.html#header">header</a></li>
+            
+                <li data-name="PyxLog#log"><a href="PyxLog.html#log">log</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="PyxLog.html">Class: PyxLog</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2>
+    PyxLog
+    </h2>
+    
+        <div class="class-description">Simple and pretty logging</div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="PyxLog">
+            
+            new PyxLog<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 8
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code>const me = require('pyx-me').create('MyLog');</code></pre>
+    
+
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="_mode"><span class="type-signature ">private</span>_mode<span class="type-signature type number">number</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Mode of logger. Determines if logger is silent or not.
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>1</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="_name"><span class="type-signature ">private</span>_name<span class="type-signature type string">string</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Name of the logger instance.
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="_prettyName"><span class="type-signature ">private</span>_prettyName<span class="type-signature type string">string</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The name of the logger wrapped with chalk.
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".create">
+            
+            <span class="type-signature static">static</span>PyxLog.create<span class="signature">(name)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PyxLog.html">PyxLog</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 146
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Static instance generator.
+Creates a new instance of the PyxLog logger.
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                Name of the logger.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PyxLog.html">PyxLog</a>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="_runThisInMode">
+            
+            <span class="type-signature ">private</span>_runThisInMode<span class="signature">(actionCb)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 132
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Runs an action based on _mode
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>actionCb</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                Function that will be called if on normal _mode (1)</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>_mode</li>
+        </ul>
+    </dd>
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="alert">
+            
+            alert<span class="signature">(msg)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 120
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Outputs alert me messages.
+Good for errors or warnings.
+#note: Passed through the _runThisInMode method
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>msg</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                String that will be embedded in the alert</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="beNormal">
+            
+            beNormal<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 54
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        This is the default state of the logger; This
+will set the logger back to normal _mode
+if it was originally put to silent _mode by calling
+beSilent
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="beSilent">
+            
+            beSilent<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 43
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        This silences the logger; once this method is called,
+no more output will be coming from the logger until
+beNormal is called or the debug option is enabled
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="debug">
+            
+            debug<span class="signature">(msg)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 100
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Outputs debug me messages.
+Good for debugging of code while coding or as extra me information to debug reoccurring bugs.
+#note: This method only prints out if the `DEBUG_MODE` env variable is set and ignores _mode
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>msg</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                        <span class="repeatable">repeatable</span>
+                    
+                
+                Array of values (string or other) that will be printed out on the screen</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="header">
+            
+            header<span class="signature">(msg)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 65
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Outputs a header me including the name of the logger.
+Good for breaks in logic or initializing messages.
+#note: Passed through the _runThisInMode method
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>msg</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                String that will be embedded in the header</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="log">
+            
+            log<span class="signature">(msg)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /home/atirado/dev/private-npm/o-pyx-log/index.js, line 78
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Outputs regular me messages.
+Good for data logs or simple messages.
+#note: Passed through the _runThisInMode method
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>msg</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                        <span class="repeatable">repeatable</span>
+                    
+                
+                Array of values (string or other) that will be printed out on the screen</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+</article>
+
+</section>  
+
+
+
+
+
+        
+
+        <footer>
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Fri Oct 28 2016 15:55:01 GMT-0700 (PDT)
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/jaguar.js"></script>
+</body>
+</html>

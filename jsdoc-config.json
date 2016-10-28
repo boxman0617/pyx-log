@@ -1,0 +1,19 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [],
+  "templates": {
+    "applicationName": "PyxLog",
+    "meta": {
+      "title": "PyxLog Open Source API Docs",
+      "description": "Open Source API docs for PyxLog logger",
+      "keyword": "logging,npm,node,log"
+    },
+    "linenums": true
+  }
+}
