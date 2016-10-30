@@ -9,8 +9,8 @@
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "coverage": "npm run analyze-coverage && npm run check-coverage",
     "cover": "npm run coverage; http-server ./coverage/lcov-report/",
-    "dev-docs": "npm run compile-docs && http-server api/",
-    "compile-docs": "./node_modules/.bin/jsdoc -t node_modules/jaguarjs-jsdoc/ -c jsdoc-config.json -a all -d api index.js"
+    "dev-docs": "npm run compile-docs && http-server docs/",
+    "compile-docs": "./node_modules/.bin/jsdoc -R README.md -t node_modules/jaguarjs-jsdoc/ -c jsdoc-config.json -a all -d docs index.js"
   },
   "author": "Alan Tirado <alan@pyxidis.io>",
   "license": "MIT",
