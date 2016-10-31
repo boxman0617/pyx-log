@@ -10,7 +10,7 @@
     "coverage": "npm run analyze-coverage && npm run check-coverage",
     "cover": "npm run coverage; http-server ./coverage/lcov-report/",
     "dev-docs": "npm run compile-docs && http-server docs/",
-    "codacy-cover": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage",
+    "codacy-cover": "istanbul cover _mocha --dir $CIRCLE_ARTIFACTS --report lcovonly -- -R spec && cat ./$CIRCLE_ARTIFACTS/lcov.info | ./node_modules/.bin/codacy-coverage",
     "compile-docs": "./node_modules/.bin/jsdoc -R README.md -t node_modules/jaguarjs-jsdoc/ -c jsdoc-config.json -a all -d docs index.js",
     "lint": "./node_modules/eslint/bin/eslint.js ./index.js"
   },
