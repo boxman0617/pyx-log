@@ -10,7 +10,9 @@
     "coverage": "npm run analyze-coverage && npm run check-coverage",
     "cover": "npm run coverage; http-server ./coverage/lcov-report/",
     "dev-docs": "npm run compile-docs && http-server docs/",
-    "compile-docs": "./node_modules/.bin/jsdoc -R README.md -t node_modules/jaguarjs-jsdoc/ -c jsdoc-config.json -a all -d docs index.js"
+    "codacy-cover": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage",
+    "compile-docs": "./node_modules/.bin/jsdoc -R README.md -t node_modules/jaguarjs-jsdoc/ -c jsdoc-config.json -a all -d docs index.js",
+    "lint": "./node_modules/eslint/bin/eslint.js ./index.js"
   },
   "author": "Alan Tirado <alan@pyxidis.io>",
   "license": "MIT",
@@ -19,8 +21,15 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "codacy-coverage": "^2.0.0",
+    "eslint": "^3.9.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
     "jaguarjs-jsdoc": "^1.0.1",
-    "jsdoc": "^3.4.2"
+    "jsdoc": "^3.4.2",
+    "mocha-lcov-reporter": "^1.2.0"
   },
   "repository": {
     "type": "git",

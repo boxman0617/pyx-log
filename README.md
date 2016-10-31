@@ -1,6 +1,9 @@
 # PyxLog
 Simple and pretty logging
 
+[![CircleCI](https://img.shields.io/circleci/project/github/boxman0617/pyx-log.svg)]()
+[![npm](https://img.shields.io/boxman0617/v/pyx-log.svg)]()
+
 ## Install
 
 ```bash
@@ -41,6 +44,11 @@ world.debug('Is world over?', '???');
 ## Output
 
 ![PyxLog Output](https://raw.githubusercontent.com/boxman0617/pyx-log/master/pyx-log-output.png)
+
+## Docs
+
+[Docs](https://boxman0617.github.io/pyx-log/) - This README.md file
+[API](https://boxman0617.github.io/pyx-log/PyxLog.html) - The API docs for the PyxLog class
 
 ## License
 MIT © [Alan Tirado](https://www.npmjs.com/~boxman0617)

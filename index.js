@@ -102,7 +102,7 @@ class PyxLog {
 			const mainMsg = msg.shift();
 			console.log(`${chalk.bold.yellow('D')}${chalk.bold.white(` => ${mainMsg}`)} ${this._prettyName}`);
 			if (msg.length > 0) {
-				msg.map((m) => {
+				msg.forEach((m) => {
 					console.log(m);
 				});
 				console.log(`${chalk.bold.white(`===# `)}${chalk.bold.yellow('DEBUG')} ${this._prettyName}`);
