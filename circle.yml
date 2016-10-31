@@ -6,8 +6,6 @@ machine:
 dependencies:
     pre:
         - npm install -g eslint mocha istanbul
-deployment:
-    npm:
-        branch: master
-        commands:
-            - npm run codacy-cover
+test:
+    override:
+        - npm run coverage-codacy

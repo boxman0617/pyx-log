@@ -3,6 +3,7 @@ Simple and pretty logging
 
 [![CircleCI](https://img.shields.io/circleci/project/github/boxman0617/pyx-log.svg)]()
 [![npm](https://img.shields.io/boxman0617/v/pyx-log.svg)]()
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/4482578d90bc41c4a9ee7c23351ce243)](https://www.codacy.com/app/atirado0617/pyx-log?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=boxman0617/pyx-log&amp;utm_campaign=Badge_Coverage)
 
 ## Install
 
