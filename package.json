@@ -1,6 +1,6 @@
 {
   "name": "pyx-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and pretty logging",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "coverage-dev": "./.scripts/coverage.sh dev",
     "coverage-codacy": "./.scripts/coverage.sh codacy",
     "coverage-lint": "./.scripts/coverage.sh lint",
-    "docs-dev": "./.scripts/coverage.sh dev",
-    "docs-compile": "./.scripts/coverage.sh compile"
+    "docs-dev": "./.scripts/docs.sh dev",
+    "docs-compile": "./.scripts/docs.sh compile"
   },
   "author": "Alan Tirado <alan@pyxidis.io>",
   "license": "MIT",
@@ -23,10 +23,6 @@
     "chai": "^3.5.0",
     "codacy-coverage": "^2.0.0",
     "eslint": "^3.9.0",
-    "eslint-config-airbnb": "^12.0.0",
-    "eslint-plugin-import": "^1.16.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.4.1",
     "jaguarjs-jsdoc": "^1.0.1",
     "jsdoc": "^3.4.2",
     "mocha-lcov-reporter": "^1.2.0"
